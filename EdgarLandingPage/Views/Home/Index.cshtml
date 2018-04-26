@@ -1,106 +1,392 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edgar Leonardo Perez &mdash; On line Resumen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Software engineer Edgar Leonardo Perez" />
+    <meta name="keywords" content="Software engineer, backend, cloud, mobile, IoT, machine learning, responsive" />
+    <meta name="author" content="Edgar Leonardo" />
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="/embedded/lib/img/favicon.ico">
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how to build ASP.NET apps that can run anywhere.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner2.svg" alt="Visual Studio" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    There are powerful new features in Visual Studio for building modern web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner3.svg" alt="Package Management" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Bring in libraries from NuGet and npm, and automate tasks using Grunt or Gulp.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <img src="~/images/banner4.svg" alt="Microsoft Azure" class="img-responsive" />
-            <div class="carousel-caption" role="option">
-                <p>
-                    Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps.
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkID=525027&clcid=0x409">
-                        Learn More
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header role="banner" id="fh5co-header" style="background-image: url(home/images/hero-4.jpg);" data-stellar-background-ratio="0.5">
+        <div class="fh5co-overlay"></div>
+        <div class="container">
+            <div class="fh5co-intro-wrap">
+                <div class="fh5co-intro">
+                   
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center">
+                                <div class="fh5co-intro-lead animate-1 to-animate">
+                                    <img src="~/projects/edgar.jpg" alt="EdgarLeonardo" style="border-radius: 50%;" />
+                                    
+                                </div>
+                                <div class="fh5co-intro-lead animate-1 to-animate">
+                                    <a href="https://www.linkedin.com/in/edgar-leonardo/" target="_blank" style="border-bottom:none;"><img src="~/projects/linkedin-logo.png" alt="EdgarLeonardo" style="border-radius: 50%;width:50px;height:50px;" /></a>
+                                    <a href="http://blog.edgarleonardo.com/" target="_blank" style="border-bottom:none;"><img src="~/projects/blogger-botton.png" alt="Blog Edgar Leonardo" style="border-radius: 50%;width:50px;height:50px;" /></a>
+                                </div>
+                                <h2 class="fh5co-intro-sub animate-2 to-animate">Hi! I&acute;m Edgar Leonardo, a Senior Full-Stack Developer </h2>
+                                <!--<p class="fh5co-social text-center" id="fh5co-intro-social">
+                                    <a href="https://www.facebook.com/edgarleonardo01" class="to-animate" target="_blank"><i class="icon-facebook-with-circle"></i></a>
+                                    <a href="https://twitter.com/edgarleonardope" class="to-animate" target="_blank"><i class="icon-twitter-with-circle"></i></a>
 
-<div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run &amp; Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
-    </div>
-</div>
+                                    <a href="https://plus.google.com/106835527217481807687" class="to-animate" target="_blank"><i class="icon-google-with-circle"></i></a>
+
+                                </p>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header>
+
+    <main role="main" id="fh5co-main">
+        <div class="container" id="bio-animate">
+            <div class="row row-padded">
+                <div class="col-md-3">
+                    <h2 class="fh5co-section-heading to-animate">About Me<span class="fh5co-border"></span></h2>
+                </div>
+                <div class="col-md-8 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-6 to-animate">
+                            <p style="font-size: 18px;">I’m a self-motivated Back-End, Front-End and Mobile developer from the Dominican Republic, I have worked as a member of several National and International development team based in the Dominican Republic, supporting and developing solutions to several countries on Latam.</p>
+                            <p style="font-size: 18px;">
+                                Due to my Experience and development skills, I have led the majority of Digital Back-End product's developments for Latin America markets including the Dominican Republic. Also, I’ve spent a big time of my career designing and developing high-quality products for a wide vast of customer working on my own business as a freelancer, with more than 6 years of experience in Back-End, Front-End and Mobile development industry designing and implementing world-class web and Mobile applications based on best practices and good design patterns.
+                            </p>
+                        </div>
+                        <div class="col-md-6 to-animate">
+                            <p style="font-size: 18px;">Personally, I consider myself as a really focused developer with strong fundamentals and deep knowledge of web and mobile development specialized in the back-end. I'm the kind of person who always finds a way to reach the traced goals, giving the best for myself. I really love what I do because is my passion and inspire me to learn and keep growing every day!</p>
+                            <p style="font-size: 18px;">
+                                Technologies I have worked with:
+                                <br />  <br />
+                                • Back-End development: Visual Studio, Akka.NET, RabbitMQ, SqlServer, Oracle, MongoDB, OAuth, SignalR, HangFire, WebSocket, Push Notifications,ASP.NET Web API, ASP.NET Core, Google API and Facebook API Integrations, Data Batch Processing, Rest Services, SOAP and Rest WS, Unit Testing, high-scale,high-availability, highly concurrent, distributed, and fault tolerant event-driven applications,, Azure Cloud, Kubernetes.
+                                <br />  <br />
+                                • Front-End development: HTML, CSS, JavaScript, jQuery, Bootstrap, JSON.
+                                <br />  <br />
+                                • Mobile Development: Visual Studio, Xamarin.Android, C#, RealmDb, MVVMLight, a beginner with Xamarin.Form and Xamarin.IOS and SQLite.
+                                <br />  <br />
+                                • IT Cultures: Project Management, Scrum, DDD, BDD, DevOps, TDD.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END .row -->
+        </div>
+        <!-- END .container -->
+
+        <div class="fh5co-section-seperator" style="background-image: url(home/images/hero-2.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-overlay"></div>
+            <div class="container" id="counter-animate">
+                <div class="fh5co-section-content-wrap">
+                    <div class="fh5co-section-content">
+                        <div class="row">
+                            <div class="col-md-4 text-center to-animate">
+                                <span class="fh5co-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="fh5co-counter-label">Clients Worked With</span>
+
+                            </div>
+                            <div class="col-md-4 text-center to-animate">
+                                <span class="fh5co-counter js-counter" data-from="0" data-to="37" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="fh5co-counter-label">Completed Projects</span>
+                            </div>
+                            <div class="col-md-4 text-center to-animate">
+                                <span class="fh5co-counter js-counter" data-from="0" data-to="25023" data-speed="5000" data-refresh-interval="50"></span>
+                                <span class="fh5co-counter-label">Estimated Line of Codes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END .container -->
+        <div class="container" id="projects-animate">
+            <div class="row row-padded">
+                <div class="col-md-3">
+                    <h2 class="fh5co-section-heading to-animate">Projects<span class="fh5co-border"></span></h2>
+                    <p class="to-animate">These are some of the projects I have worked doing backend, front end and mobile development.</p>
+                </div>
+                <div class="col-md-8 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate">
+                            <a href="~/projects/projectKmesafe.jpg" class="image-popup">
+                                <div class="fh5co-overlay-text">KMeSafe</div>
+                                <div class="fh5co-overlay"></div>
+                                <img src="~/projects/projectKmesafe.jpg" alt="KMeSafe" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate">
+                            <a href="~/projects/nopcommerce.jpg" class="image-popup">
+                                <div class="fh5co-overlay-text">NopCommerce </div>
+                                <div class="fh5co-overlay"></div>
+                                <img src="~/projects/nopcommerce.jpg" alt="NopCommerce " class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate">
+                            <a href="~/projects/apricot.jpg" class="image-popup">
+                                <div class="fh5co-overlay-text">ApriCot</div>
+                                <div class="fh5co-overlay"></div>
+                                <img src="~/projects/apricot.jpg" alt="ApriCot" class="img-responsive">
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate">
+                            <a href="~/projects/intellipaq.jpg" class="image-popup">
+                                <div class="fh5co-overlay-text">IntelliPaq</div>
+                                <div class="fh5co-overlay"></div>
+                                <img src="~/projects/intellipaq.jpg" alt="IntelliPaq" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate">
+                            <a href="~/projects/mnet.jpg" class="image-popup">
+                                <div class="fh5co-overlay-text">Digital Network Backend Integration</div>
+                                <div class="fh5co-overlay"></div>
+                                <img src="~/projects/mnet.jpg" alt="All Backend and Api integrations" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate">
+                            <a href="~/projects/pa.jpg" class="image-popup">
+                                <div class="fh5co-overlay-text">Yellow Page Search Engine And Backend</div>
+                                <div class="fh5co-overlay"></div>
+                                <img src="~/projects/pa.jpg" alt="Yellow Page Search Engine And Backend" class="img-responsive">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- END .row -->
+        </div>
+        <!-- END .container -->
+        <div class="fh5co-section-seperator" id="testimony-animate" style="background-image: url(home/images/hero-3.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-overlay"></div>
+            <div class="container">
+                <div class="fh5co-section-content-wrap">
+                    <div class="fh5co-section-content">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h2 class="fh5co-section-heading to-animate">Get In Touch<span class="fh5co-border"></span></h2>
+
+                                <ul class="fh5co-contact">
+                                    <!--<li class="fh5co-contact-address to-animate">
+                <i class="icon-home"></i>
+                5555 Love Paradise 56 New Clity 5655, Excel Tower United Kingdom
+            </li>-->
+                                    <!--<li class="to-animate"><i class="icon-phone"></i> (809) 465-6789</li>-->
+                                    <li class="to-animate"><i class="icon-email"></i>edgarleonardo@gmail.com</li>
+                                    <li class="to-animate"><i class="icon-globe"></i> <a href="http://edgarleonardo.com/" target="_blank">edgarleonardo.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-8 col-md-offset-1 fh5co-testimony to-animate">
+                             
+                                    <blockquote>
+                                        <p class="text-center quote">&ldquo;The fastest way to achieve any goal is by the constant improvement. &rdquo; <cite class="author">&mdash; Edgar Leonardo</cite></p>
+                                    </blockquote>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <div class="container" id="services-animate">
+            <div class="row row-padded">
+                <div class="col-md-3">
+                    <h2 class="fh5co-section-heading to-animate">Services<span class="fh5co-border"></span></h2>
+                    <p class="to-animate">Libero velit fugit blanditiis tempora repellat iste inventore amet quaerat ex aliquid sint labore placeat esse.</p>
+                </div>
+                <div class="col-md-8 col-md-push-1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="fh5co-accordion-wrap">
+                                <div class="fh5co-accordion to-animate">
+                                    <div class="fh5co-accordion-head">
+                                        <a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
+                                        <h3><i class="icon-clapperboard"></i>Creative Direction</h3>
+                                    </div>
+                                    <div class="fh5co-accordion-body active">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum distinctio at molestias atque in adipisci vero porro nam, enim excepturi esse. Quisquam, cupiditate inventore excepturi totam sint, nisi illo sit dicta dignissimos amet alias facilis molestiae in quaerat. Veritatis doloribus voluptates esse culpa perferendis laudantium sunt dolor laborum, odit dolores.</p>
+                                    </div>
+                                </div>
+                                <div class="fh5co-accordion to-animate">
+                                    <div class="fh5co-accordion-head">
+                                        <a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
+                                        <h3><i class="icon-hand"></i>Logo &amp; Identity Design</h3>
+                                    </div>
+                                    <div class="fh5co-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum distinctio at molestias atque in adipisci vero porro nam, enim excepturi esse. Quisquam, cupiditate inventore excepturi totam sint, nisi illo sit dicta dignissimos amet alias facilis molestiae in quaerat. Veritatis doloribus voluptates esse culpa perferendis laudantium sunt dolor laborum, odit dolores.</p>
+                                    </div>
+                                </div>
+
+                                <div class="fh5co-accordion to-animate">
+                                    <div class="fh5co-accordion-head">
+                                        <a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
+                                        <h3><i class="icon-laptop"></i>Websites</h3>
+                                    </div>
+                                    <div class="fh5co-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum distinctio at molestias atque in adipisci vero porro nam, enim excepturi esse. Quisquam, cupiditate inventore excepturi totam sint, nisi illo sit dicta dignissimos amet alias facilis molestiae in quaerat. Veritatis doloribus voluptates esse culpa perferendis laudantium sunt dolor laborum, odit dolores.</p>
+                                    </div>
+                                </div>
+                                <div class="fh5co-accordion to-animate">
+                                    <div class="fh5co-accordion-head">
+                                        <a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
+                                        <h3><i class="icon-shopping-cart"></i>Ecommerce</h3>
+                                    </div>
+                                    <div class="fh5co-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum distinctio at molestias atque in adipisci vero porro nam, enim excepturi esse. Quisquam, cupiditate inventore excepturi totam sint, nisi illo sit dicta dignissimos amet alias facilis molestiae in quaerat. Veritatis doloribus voluptates esse culpa perferendis laudantium sunt dolor laborum, odit dolores.</p>
+                                    </div>
+                                </div>
+                                <div class="fh5co-accordion to-animate">
+                                    <div class="fh5co-accordion-head">
+                                        <a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
+                                        <h3><i class="icon-mobile"></i>Responsive &amp; Mobile</h3>
+                                    </div>
+                                    <div class="fh5co-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum distinctio at molestias atque in adipisci vero porro nam, enim excepturi esse. Quisquam, cupiditate inventore excepturi totam sint, nisi illo sit dicta dignissimos amet alias facilis molestiae in quaerat. Veritatis doloribus voluptates esse culpa perferendis laudantium sunt dolor laborum, odit dolores.</p>
+                                    </div>
+                                </div>
+                                <div class="fh5co-accordion to-animate">
+                                    <div class="fh5co-accordion-head">
+                                        <a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
+                                        <h3><i class="icon-man"></i>User Experience</h3>
+                                    </div>
+                                    <div class="fh5co-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum distinctio at molestias atque in adipisci vero porro nam, enim excepturi esse. Quisquam, cupiditate inventore excepturi totam sint, nisi illo sit dicta dignissimos amet alias facilis molestiae in quaerat. Veritatis doloribus voluptates esse culpa perferendis laudantium sunt dolor laborum, odit dolores.</p>
+                                    </div>
+                                </div>
+                                <div class="fh5co-accordion to-animate">
+                                    <div class="fh5co-accordion-head">
+                                        <a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
+                                        <h3><i class="icon-mail"></i>Email Marketing</h3>
+                                    </div>
+                                    <div class="fh5co-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum distinctio at molestias atque in adipisci vero porro nam, enim excepturi esse. Quisquam, cupiditate inventore excepturi totam sint, nisi illo sit dicta dignissimos amet alias facilis molestiae in quaerat. Veritatis doloribus voluptates esse culpa perferendis laudantium sunt dolor laborum, odit dolores.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <!--<div class="fh5co-section-seperator fh5co-section-seperator-white" id="contact-animate" style="background-image: url(home/images/hero-4.jpg);" data-stellar-background-ratio="0.5">
+            <div class="fh5co-overlay"></div>
+            <div class="container">
+                <div class="fh5co-section-content-wrap">
+                    <div class="fh5co-section-content">
+                        <div class="row">
+
+                            <div class="col-md-3">
+                                <h2 class="fh5co-section-heading to-animate">Get In Touch<span class="fh5co-border"></span></h2>
+
+                                <ul class="fh5co-contact">
+                                  
+                                    <li class="to-animate"><i class="icon-email"></i>edgarleonardo@gmail.com</li>
+                                    <li class="to-animate"><i class="icon-globe"></i> <a href="http://edgarleonardo.com/" target="_blank">edgarleonardo.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-8 col-md-push-1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group to-animate">
+                                            <label for="name" class="sr-only">Name</label>
+                                            <input type="text" id="name" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="form-group to-animate">
+                                            <label for="email" class="sr-only">Email</label>
+                                            <input type="email" id="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="form-group to-animate">
+                                            <label for="phone" class="sr-only">Phone</label>
+                                            <input type="text" id="phone" class="form-control" placeholder="Phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group to-animate">
+                                            <label for="message" class="sr-only">Message</label>
+                                            <textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                                        </div>
+                                        <div class="form-group to-animate">
+                                            <input type="submit" class="btn btn-primary btn-block" value="Send Message">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- END .container -->
+    </main>
+    <footer role="contentinfo" id="fh5co-footer">
+        <div class="container" id="footer-animate">
+            <div class="row row-padded">
+                <div class="col-md-8 col-md-push-4">
+                    <p class="to-animate">&copy; 2018 Edgar Leonardo. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- END .container -->
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Stellar -->
+    <script src="js/jquery.stellar.min.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
